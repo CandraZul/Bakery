@@ -6,12 +6,13 @@ import interfaces.hargaBahan;
 /**
  *
  * @author CintaHabsari
+ * @author 
  */
 public class Pizza extends Roti implements hargaBahan{
-    protected int keju =30;
-    protected int sosis = 50;
-    protected int smokedbeef = 50;
-    protected int bombay = 30;
+    private int keju =30;
+    private int sosis = 50;
+    private int smokedbeef = 50;
+    private int bombay = 30;
     
      public Pizza(int jumlah, int varian){
         this.tepungTerigu = 1000;
@@ -38,8 +39,6 @@ public class Pizza extends Roti implements hargaBahan{
         } else {
             this.varian = varian;
         }
-        
-        
     }
     
     @Override
@@ -49,10 +48,10 @@ public class Pizza extends Roti implements hargaBahan{
     
     public void printKebutuhanTopFilPizza(){
         System.out.println("KEBUTUHAN TOPPING FILLING PIZZA VARIAN "+ this.varian);
-        System.out.println("Keju : "+this.keju+" gr");
-        System.out.println("Sosis : "+this.sosis+" gr");
-        System.out.println("Smoked Beef : "+this.smokedbeef+" gr");
-        System.out.println("Bawang Bombay : "+this.bombay+" gr");
+        System.out.println("Keju            : "+this.keju+" gr");
+        System.out.println("Sosis           : "+this.sosis+" gr");
+        System.out.println("Smoked Beef     : "+this.smokedbeef+" gr");
+        System.out.println("Bawang Bombay   : "+this.bombay+" gr");
         
     }
     

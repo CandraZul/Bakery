@@ -71,6 +71,15 @@ public abstract class Roti implements hargaBahan{
         return (this.esBatu/(this.totalBerat / this.beratPerPcs))*this.jmlPesanan;
     }
     
+    protected double totalHarga(){
+        return this.hargaPerPcs()*this.jmlPesanan;
+    }
+    
+    public void printTotalHarga(){
+        DecimalFormat df = new DecimalFormat("#.##");
+        System.out.println("Total harga untuk " + this.jmlPesanan + " " + this.getClass().getSimpleName() + " varian " + this.varian + " : Rp " + df.format(this.totalHarga()));
+    }
+    
     public void printBahan() {
         DecimalFormat df = new DecimalFormat("#.##");
         System.out.println("========== B A H A N =========");

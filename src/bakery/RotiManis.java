@@ -9,11 +9,11 @@ import interfaces.hargaBahan;
  */
 public class RotiManis extends Roti implements hargaBahan{
     
-    protected int keju;
-    protected int coklat;
-    protected int redbean;
-    protected int sosis;
-    protected int krimvanilla;
+    private int keju;
+    private int coklat;
+    private int redbean;
+    private int sosis;
+    private int krimvanilla;
     
     public RotiManis(int jumlah, int varian){
         this.tepungTerigu = 1000;
@@ -44,11 +44,10 @@ public class RotiManis extends Roti implements hargaBahan{
         if (varian == 1){
             this.keju = 5;
             this.coklat = 10;
-        }
-        else if (varian == 2){
+        }else if (varian == 2){
             this.krimvanilla=5;
             this.redbean=10;
-        }else{
+        }else if (varian==3){
             this.keju=10;
             this.sosis=10;
         }
@@ -64,10 +63,10 @@ public class RotiManis extends Roti implements hargaBahan{
     
     public void printKebutuhanTopFilRotiManis(){
         System.out.println("KEBUTUHAN TOPPING FILLING ROTI MANIS VARIAN "+ this.varian);
-        System.out.println("Keju : "+this.keju+" gr");
-        System.out.println("Coklat : "+this.coklat+" gr");
-        System.out.println("Red Bean : "+this.redbean+" gr");
-        System.out.println("Sosis : "+this.sosis+" gr");
+        System.out.println("Keju        : "+this.keju+" gr");
+        System.out.println("Coklat      : "+this.coklat+" gr");
+        System.out.println("Red Bean    : "+this.redbean+" gr");
+        System.out.println("Sosis       : "+this.sosis+" gr");
         System.out.println("Krim Vanila : "+this.krimvanilla+" gr");
     }
     

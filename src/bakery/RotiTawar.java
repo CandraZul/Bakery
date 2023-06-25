@@ -8,8 +8,8 @@ import interfaces.hargaBahan;
  * @author CintaHabsari
  */
 public class RotiTawar extends Roti implements hargaBahan {
-    protected int keju = 80;
-    protected int coklat = 80;
+    private int keju = 80;
+    private int coklat = 80;
     public RotiTawar(int jumlah, int varian){
         this.tepungTerigu = 1000;
         this.gulaPasir = 125;
@@ -34,6 +34,12 @@ public class RotiTawar extends Roti implements hargaBahan {
             System.exit(0);
         } else {
             this.varian = varian;
+        }
+        
+        if (varian == 1){
+            this.coklat = 80;
+        } else if (varian == 2){
+            this.keju = 80;
         }
         
         
