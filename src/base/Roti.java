@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
  *
  * @author candr
  */
-public class Roti implements hargaBahan{
+public abstract class Roti implements hargaBahan{
     protected int tepungTerigu;
     protected int gulaPasir;
     protected int butter;
@@ -91,5 +91,6 @@ public class Roti implements hargaBahan{
         System.out.println("Es Batu     : " + df.format(kebutuhanEsBatu()) + " gr");
         System.out.println("===============================");
     }
+    
 }
    

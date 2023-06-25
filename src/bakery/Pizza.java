@@ -8,7 +8,7 @@ import interfaces.hargaBahan;
  * @author CintaHabsari
  */
 public class Pizza extends Roti implements hargaBahan{
-     public Pizza(int jumlah){
+     public Pizza(int jumlah, int varian){
         this.tepungTerigu = 1000;
         this.gulaPasir = 100;
         this.butter = 100;
@@ -27,6 +27,12 @@ public class Pizza extends Roti implements hargaBahan{
             this.jmlPesanan=jumlah;
         }
         
+        if (varian != 1){
+            System.out.println("varian tidak ada");
+            System.exit(0);
+        } else {
+            this.varian = varian;
+        }
         
     }
     
@@ -35,11 +41,8 @@ public class Pizza extends Roti implements hargaBahan{
         return hargaBahan.KEJU*30 +hargaBahan.SOSIS*50 +hargaBahan.SMOKED_B*50 +hargaBahan.BAWANG_B*30;
     }
     
-    double biayaRotitanpatopping(){
-        return this.biayaPerDough()/(this.totalBerat/this.beratPerPcs);
-    }
-
+    
+    
     
 
-    
 }

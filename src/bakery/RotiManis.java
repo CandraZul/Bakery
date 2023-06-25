@@ -42,4 +42,7 @@ public class RotiManis extends Roti implements hargaBahan{
             default -> hargaBahan.KEJU*10 + hargaBahan.SOSIS*10;
         };
     }
+
+    
+    
 }
