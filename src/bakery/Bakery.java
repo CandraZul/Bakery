@@ -17,5 +17,9 @@ public class Bakery {
         Pizza p1 = new Pizza(10, 1);
         System.out.println("Harga Pizza: " + p1.hargaPerPcs());
         p1.printBahan();
+        
+        RotiTawar t1 = new RotiTawar(1, 1);
+        System.out.println("Harga Roti Manis: " +t1.hargaPerPcs());
+        t1.printBahan();
     }
 }
