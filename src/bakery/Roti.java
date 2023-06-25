@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package bakery;
 
 /**
@@ -10,11 +6,33 @@ package bakery;
  */
 public class Roti {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    String tepung;
+    String gula;
+    String butter;
+    String ragi;
+    String susuBubuk;
+    String susuCair;
+    String telur;
+    String esBatu;
+    int jmlPesanan;
+    
+
+    public void printBahan(){
     }
     
+    public void printHarga(){
+        
+    }
+    
+    public float beratAdonan(){
+        return 0;
+    }
+    
+    public void setJmlPesanan(){
+        
+    }
+    
+    public int getJmlPesanan(){
+        return 0;
+    }
 }
