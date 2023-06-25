@@ -8,6 +8,8 @@ import interfaces.hargaBahan;
  * @author CintaHabsari
  */
 public class RotiTawar extends Roti implements hargaBahan {
+    protected int keju = 80;
+    protected int coklat = 80;
     public RotiTawar(int jumlah, int varian){
         this.tepungTerigu = 1000;
         this.gulaPasir = 125;
@@ -33,6 +35,8 @@ public class RotiTawar extends Roti implements hargaBahan {
         } else {
             this.varian = varian;
         }
+        
+        
     }
     @Override
     protected double biayaVarian(){
@@ -42,7 +46,10 @@ public class RotiTawar extends Roti implements hargaBahan {
         };
     }
     
-    double biayaTanpaFilling(){
-        return this.biayaPerDough()/(this.totalBerat/this.beratPerPcs);
+    
+    public void printKebutuhanTopFilRotiTawar(){
+        System.out.println("KEBUTUHAN TOPPING FILLING ROTI TAWAR VARIAN "+ this.varian);
+        System.out.println("Keju    : "+this.keju+" gr");
+        System.out.println("Coklat  : "+this.coklat+" gr");
     }
 }

@@ -8,6 +8,13 @@ import interfaces.hargaBahan;
  * @author CintaHabsari
  */
 public class RotiManis extends Roti implements hargaBahan{
+    
+    protected int keju;
+    protected int coklat;
+    protected int redbean;
+    protected int sosis;
+    protected int krimvanilla;
+    
     public RotiManis(int jumlah, int varian){
         this.tepungTerigu = 1000;
         this.gulaPasir = 150;
@@ -33,6 +40,18 @@ public class RotiManis extends Roti implements hargaBahan{
         } else {
             this.varian = varian;
         }
+        
+        if (varian == 1){
+            this.keju = 5;
+            this.coklat = 10;
+        }
+        else if (varian == 2){
+            this.krimvanilla=5;
+            this.redbean=10;
+        }else{
+            this.keju=10;
+            this.sosis=10;
+        }
     }
     @Override
     protected double biayaVarian(){
@@ -42,6 +61,16 @@ public class RotiManis extends Roti implements hargaBahan{
             default -> hargaBahan.KEJU*10 + hargaBahan.SOSIS*10;
         };
     }
+    
+    public void printKebutuhanTopFilRotiManis(){
+        System.out.println("KEBUTUHAN TOPPING FILLING ROTI MANIS VARIAN "+ this.varian);
+        System.out.println("Keju : "+this.keju+" gr");
+        System.out.println("Coklat : "+this.coklat+" gr");
+        System.out.println("Red Bean : "+this.redbean+" gr");
+        System.out.println("Sosis : "+this.sosis+" gr");
+        System.out.println("Krim Vanila : "+this.krimvanilla+" gr");
+    }
+    
 
     
     

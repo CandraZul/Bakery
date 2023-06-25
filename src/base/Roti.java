@@ -16,13 +16,6 @@ public abstract class Roti implements hargaBahan{
     protected int susuCair;
     protected int telur;
     protected int esBatu;
-    protected int keju;
-    protected int coklat;
-    protected int kvanilla;
-    protected int redbean;
-    protected int sosis;
-    protected int smokedbeef;
-    protected int bombay;
     protected int varian;
     protected double totalBerat;
     protected int jmlPesanan;
@@ -89,7 +82,6 @@ public abstract class Roti implements hargaBahan{
         System.out.println("Susu Cair   : " + df.format(kebutuhanSusuCair()) + " gr");
         System.out.println("Telur       : " + df.format(kebutuhanTelur()) + " gr");
         System.out.println("Es Batu     : " + df.format(kebutuhanEsBatu()) + " gr");
-        System.out.println("===============================");
     }
     
 }
