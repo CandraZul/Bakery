@@ -4,10 +4,6 @@
  */
 package bakery;
 
-/**
- *
- * @author candr
- */
 public class Bakery {
     public static void main(String[] args) {
         RotiManis r1 = new RotiManis(50, 1);
@@ -39,7 +35,7 @@ public class Bakery {
         System.out.println("**********************************************");
         
         System.out.println("**********************************************");
-        RotiTawar t2 = new RotiTawar(15, 1);
+        RotiTawar t2 = new RotiTawar(15, 2);
         t2.printTotalHarga();
         t2.printBahan();
         t2.printKebutuhanTopFilRotiTawar();
